@@ -77,6 +77,20 @@ public class Main {
             notRight2[l] = t;
         }
         System.out.println(Arrays.toString(notRight2));
+        System.out.println();
+
+        //task 8 Необходимо найти два числа, сумма которых равна −2. {−6, 2, 5, −8, 8, 10, 4, −7, 12, 1}
+
+        int[] summ = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        int countOfSumm=summ.length;
+        for(int x=0;x<countOfSumm;x++)
+            for(int y=0;y<countOfSumm;y++){
+                if(summ[y]+summ[x]==-2){
+                    int xY=summ[y]+summ[x];
+                    System.out.print(summ[y]+"+"+summ[x]+"="+xY+" ");
+                }
+            }
+
 
     }
 
